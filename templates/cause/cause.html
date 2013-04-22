@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load mezzanine_tags keyword_tags %}
+
+{% block meta_title %}What Causes {{ causedata.title }}{% endblock %}
+
+{% block meta_keywords %}
+{% endblock %}
+
+{% block meta_description %}
+This page describes the leading causes of {{ causedata.title }}
+{% endblock %}
+
+{% block title %}
+    <h1>What Causes {{ causedata.title }}</h1>
+{% endblock %}
+
+{% block main %}
+    {{ causedata.subject_data }}
+{% endblock %}
