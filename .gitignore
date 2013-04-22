@@ -11,6 +11,7 @@ manage.py
 fabfile.py
 settings.py
 local_settings.py
+thecause.sh
 urls.py
 docs/
 notes/
