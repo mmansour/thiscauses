@@ -9,20 +9,16 @@
 {% endblock %}
 
 {% block main %}
-{% blocktrans %}
-<h2>Congratulations!</h2>
-<p>
-    Welcome to your new Mezzanine powered website.
-    Here are some quick links to get you started:
+
+<h2>{% trans "Welcome to This Causes" %}!</h2>
+<p>{% trans "This Causes is a place where you can lookup the cause of the thing you are curious about. Find out what causes a certain disease, anything related to science, or just about anything you can think of." %}
+
 </p>
+<h3>{% trans "Most Recent Cause Lookups" %}</h3>
 <ul>
-    <li><a href="/admin/">Log in to the admin interface</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/content-architecture.html">Creating custom page types</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#templates">Modifying HTML templates</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#why-isn-t-the-homepage-a-page-object-i-can-edit-via-the-admin">Changing this homepage</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html">Other frequently asked questions</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/configuration.html#default-settings">Full list of settings</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/deployment.html">Deploying to a production server</a></li>
+    {% for cause in most_recent %}
+        <li><a href="{{ cause.get_absolute_url }}">{{ cause.title }}</a></li>
+    {% endfor %}
 </ul>
-{% endblocktrans %}
+
 {% endblock %}
