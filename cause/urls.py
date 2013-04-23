@@ -6,5 +6,5 @@ from mezzanine.core.views import direct_to_template
 
 urlpatterns = patterns('cause.views',
     url("^$", "home", name="home"),
-    (r'^(?P<pageslug>[\w-]+)/$', 'cause'),
+    url(r'^(?P<pageslug>[\w-]+)/$', 'cause'),
 )

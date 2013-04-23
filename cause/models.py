@@ -22,7 +22,6 @@ class CausePage(Displayable):
     def get_absolute_url(self):
         return ('cause.views.cause', [self.slug,])
 
-
     def __unicode__(self):
         return self.title
 
