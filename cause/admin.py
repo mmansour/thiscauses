@@ -12,6 +12,8 @@ class CausePageAdmin(DisplayableAdmin):
         ("Published Status",            {'fields': ['status']}),
         ("Allow Comments",            {'fields': ['allow_comments']}),
         ("Subject Data",                 {'fields': ['subject_data']}),
+        ("Subject Treatments",                 {'fields': ['subject_data_treatment']}),
+        ("Subject Natural Cures",                 {'fields': ['subject_data_natural_cures']}),
         ("Subject Video",            {'fields': ['subject_video']}),
         ("Subject Image",            {'fields': ['subject_image']}),
         ("Subject Ad One",            {'fields': ['subject_one_ad']}),

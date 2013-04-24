@@ -7,7 +7,9 @@ from django.utils.translation import ugettext_lazy as _
 
 class CausePage(Displayable):
 
-    subject_data = models.TextField(blank=True, verbose_name="Subject One Data")
+    subject_data = models.TextField(blank=True, verbose_name="Subject One Causes")
+    subject_data_treatment = models.TextField(blank=True, verbose_name="Subject One Treatment")
+    subject_data_natural_cures = models.TextField(blank=True, verbose_name="Subject One Natural Cures")
     subject_video = models.TextField(blank=True, verbose_name="Subject One Video")
     subject_image = models.ImageField(upload_to="uploads", blank=True, null=True,)
     subject_one_ad = models.TextField(blank=True, verbose_name="Subject Ad One")
