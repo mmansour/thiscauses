@@ -17,7 +17,7 @@
 <h3>{% trans "Most Recent Cause Lookups" %}</h3>
 <ul>
     {% for cause in most_recent %}
-        <li><a href="{{ cause.get_absolute_url }}">{{ cause.title }}</a></li>
+        <li>What Causes <a href="{{ cause.get_absolute_url }}">{{ cause.title }}</a></li>
     {% endfor %}
 </ul>
 
